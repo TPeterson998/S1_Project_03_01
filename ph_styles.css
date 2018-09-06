@@ -1,0 +1,138 @@
+@charset "utf-8";
+
+/* I set all of the font familys up and the charset of this style sheet. I had to look back at my notes to see how to set up font face at the beginning.*/
+@font-face {
+    font-family: Champagne;
+    src: url('cac_champagne.woff') format('woff'),
+        url('cac_champagne.tff') format('truetype')
+}
+
+@font-face {
+    font-family: DobkinPlain;
+    src: url('DobkinPlain.woff') format('woff'),
+        url('DobkinPlain.tff') format('truetype')
+}
+
+@font-face {
+    font-family: Grunge;
+    src: url('1942.woff') format('woff'),
+        url('1942.tff') format('truetype')
+}
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 2
+   Case Problem 1
+   
+   PHCT Typographic Style Sheet
+   Author: Trent Peterson
+   Date:   9.6.18
+   
+   Filename: ph_styles.css
+
+*/
+/* Structural Styles */
+/* I set up the background color  tag for several objects which will make the background behind that element the color i made it. I also set up the alignment and padding of several elements so that those elements can be in the right place. */
+html {
+    background-color: hsl(91, 8%, 56%);
+}
+
+body {
+    background-color: hsl(58, 31%, 84%);
+    font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
+}
+
+header {
+    background-color: black
+}
+
+p {
+    margin: 0px;
+    padding: 5px 25px 25px 25px;
+}
+
+body>p {
+    font-size: 1.1em;
+    text-align: center;
+}
+
+address {
+    font-size: .9em;
+    font-style: normal;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+}
+
+/* Navigation Styles */
+/* I changed the font family in the nav along with every hyperlink and if it is hover, visited, active, or left alone and I changed the spacing of the nav as well.*/
+nav a {
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    padding: 10px 0px 10px 0px;
+}
+
+nav>ul>li>a:link,
+nav>ul>li>a:visited {
+    color: white;
+    background-color: hsla(0, 0%, 42%, 0.4);
+    text-decoration: none;
+}
+
+nav>ul>li>a:hover,
+nav>ul>li>a:active {
+    color: hsla(0, 0%, 100%, 0.7);
+    background-color: hsla(0, 0%, 42%, 0.7);
+}
+
+/* Section Styles */
+/* I changed the font size,weight,margin,and padding of the h1 in section with the class of playbill. Then for each the id's play1, play2, play3, play4 i changed the font family and the background color.  */
+section.playbill h1 {
+    font-size: 3em;
+    font-weight: normal;
+    margin: 0px;
+    padding: 20px 0px 10px 20px;
+}
+
+#play1 {
+    background-color: hsl(240, 100%, 88%)
+}
+
+#play2 {
+    background-color: hsl(25, 88%, 73%)
+}
+
+#play3 {
+    background-color: hsl(0, 100%, 75%)
+}
+
+#play4 {
+    background-color: hsl(296, 86%, 86%)
+}
+
+#play1 h1 {
+    font-family: Champagne, cursive;
+}
+
+#play2 h1 {
+    font-family: Grunge, ‘Times New Roman’, Times, serif;
+}
+
+#play3 h1 {
+    font-family: Impact, Charcoal, sans-serif;
+}
+
+#play4 h1 {
+    font-family: Dobkin, cursive;
+}
+
+/* Description List Styles */
+/* I changed the font size in both dt and dd tgs and chaged the color and weight for the dt tag and the margin for the dd tag. */
+dt {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: hsla(0, 0%, 0%, 0.4)
+}
+
+dd {
+    font-size: 1.3em;
+    margin: 0px 0px 10px 0px;
+}
